@@ -1,0 +1,10 @@
+[
+    {
+        "path": "/food",
+        "matchPath": "/food/*"
+    },
+    {
+        "path": "/index",
+        "matchPath": "/index/*"
+    }
+]
