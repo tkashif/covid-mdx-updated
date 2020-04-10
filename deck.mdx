@@ -76,5 +76,16 @@
 
 # Slide 9
 
+## Change of Variables for Data Types
 
-
+- We have seen given variables within our dataset to create time series models, but what would happen if we change the variable's
+  names? Let's find out.
+- When we go to pre-request script, this is where we can initialize our variables to anything that we please. Let's say that we
+  wanted to name our variable "ISO" from the data from China. We would then use the `pm.variables.set()` function call to initialize
+  the variable name and the first parameter will be the name we want to define (`ISO`) and the second parameter will store all of the
+  data from the previous variable (`CHN`). The function call will look like this, `pm.variables.set("ISO", "CHN");`.
+- Now you can click the send button to run the code for it and click visualize and you'll notice two things when you run this time 
+  series: the graph looks exactly the same and the API key has a different variable after `/country/` 
+  `https://covidapi.info/api/v1/country/{{ISO}}`. That is because the only thing we have redefined was China's variable name
+  but everything else remains the same.
+  ![](https://miro.medium.com/max/1000/1*YrWv1YwhYwZ04tceaKmFGw.png
