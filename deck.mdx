@@ -1,0 +1,70 @@
+import Layout from './components/Layout'
+import Grid from './components/Grid'
+import FlexItem from './components/FlexItem'
+import FlexContainer from './components/FlexContainer'
+
+<Layout bg='#ffff66'>
+  <h1 style={{'color':'black'}}>Welcome to the Postman COVID-19 Visualization Workshop!</h1>
+  <FlexContainer>
+    <FlexItem padding='1em'>
+      <img src={require('./images/lines.png')} style={{'height':'300px'}}/>
+    </FlexItem>
+    <FlexItem padding='1em'>
+      <img src={require('./images/pm-icon.png')} style={{'height':'300px'}}/>
+    </FlexItem>
+  </FlexContainer>
+</Layout>
+
+---
+
+<Layout bg='gray'>
+  <h1>Download Postman!</h1>
+  <img src={require('./images/pm-icon.png')} style={{'height':'200px'}} />
+  Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downloads/</a>
+</Layout>
+
+---
+
+<Layout bg='tomato'>
+  <img src={require('./images/pm-screen.png')}  />
+</Layout>
+
+---
+
+<Layout bg='tomato'>
+  <h1>Set Up</h1>
+  <FlexContainer>
+    <FlexItem padding='.5em'>
+      <span>Step 1</span>
+      <img src={require("./images/new.png")} style={{'height':'200px'}} />
+    </FlexItem>
+    <FlexItem padding='.5em'>
+      <span>Step 2</span>
+      <img src={require("./images/templates.png")} style={{'height':'200px'}} />
+    </FlexItem>
+    <FlexItem padding='.5em'>
+      <span>Step 3</span>
+      <img src={require("./images/search.png")} style={{'height':'200px'}} />
+    </FlexItem>
+    <FlexItem padding='.5em'>
+      <span>Step 4</span>
+      <img src={require("./images/howto.png")} style={{'height':'200px'}} />
+    </FlexItem>
+  </FlexContainer>
+</Layout>
+
+---
+
+<Layout bg='tomato'>
+  <h1 style={{'height':'0'}}>Add the Visualizer</h1>
+  <img src={require("./images/visualizer.png")}/>
+</Layout>
+
+---
+
+<Layout bg='tomato'>
+  <h1 style={{'height':'0'}}>Code the Template</h1>
+  <img src={require("./images/template.png")} style={{'width':'60%'}} />
+</Layout>
+
+---
