@@ -2,34 +2,20 @@ import { Image } from 'mdx-deck'
 
 ## Download Postman!
 
-Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downloads/</a>
-
 ---
 
 ## Postman Quick Rundown
-
-<img src={require("./images/new.png")}/>
-<img src={require("./images/templates.png")}/>
-<img src={require("./images/search.png")}/>
-<img src={require("./images/howto.png")}/>
-
 ---
 
 # Add the Visualizer
-
-<img src={require("./images/visualizer.png")}/>
 
 ---
 
 # Code the Template
 
-<img src={require("./images/template.png")}/>
-
 ---
 
 # Make it Pretty with CSS!
-
-<img src={require("./images/pretty.png")}/>
 
 ---
 
@@ -46,13 +32,13 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   to initialize Chart.js library, `<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>`.
 * After that, we can write the JavaScript code written below between the two `<script>` parameters to form the body that passes the dates and data values of our dataset.
 ```
-<img src ={require("https://www.picturepaste.ca/images/2020/04/10/Capture563ae9be88c35cd7.png")}/>
+<img src ={require("./images/USA Code.png")}/>
 
 ```notes
 * Now that we have completed the steps, we can run the code through the send button and after we click the visualize button, we have
   finally created our time series model!
 ```
-<img src ={require("https://miro.medium.com/max/1400/1*DHhYaM-crW_ev_x3abAdWw.png")}/>
+<img src ={require("./images/USA Graph.png")}/>
   
  ```notes
  * We can see here that the cases for COVID-19 have been stagnant throughout January and February, but then they start to increase in March. This means that as time goes on after March, the number of COVID-19 cases increase, meaning the disease is starting to spread much throughout the US during this time.
@@ -75,7 +61,7 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
 * Once that's completed you, can search for it on the API key, click the send button, click the visualize button to create the model 
   and voila! You have created the Time Series model for China.
 ```
-<img src ={require("https://miro.medium.com/max/1000/1*YrWv1YwhYwZ04tceaKmFGw.png")}/>
+<img src ={require("./images/China.png")}/>
 
 ---
 
@@ -96,7 +82,7 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
 * Your API key on the GET search bar will look like this, `https://covidapi.info/api/v1/global/count`, and once you hit the send and the
   visualize buttons, just like that, you created another time series model for COVID-19 cases for the entire world.
 ```
-<img src = {require("https://www.picturepaste.ca/images/2020/04/10/global.png")}/>
+<img src = {require("./images/Global Graph.png")}/>
   
 ---
 
@@ -112,7 +98,7 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   the variable name and the first parameter will be the name we want to define (`ISO`) and the second parameter will store all of the
   data from the previous variable (`CHN`). The function call will look like this, `pm.variables.set("ISO", "CHN");`.
 ```
-<img src = {require("https://www.picturepaste.ca/images/2020/04/10/ISO.png")}/>
+<img src = {require("./images/ISO.png")}/>
 
 ```notes
 * Now you can click the send button to run the code for it and click visualize and you'll notice two things when you run this time 
@@ -121,7 +107,7 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   but everything else remains the same.
 ```
   
-<img src = {require("https://miro.medium.com/max/1000/1*YrWv1YwhYwZ04tceaKmFGw.png")}/>
+<img src = {require("./images/ISO Graph.png")}/>
   
 ```notes
 * Now you're probably wondering how is the graph reading through the data appropriately with the new variable name? To further
@@ -131,7 +117,7 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   varaible name "ISO", which explains how we're able to store the data itself in the first place.
 ```
 
-<img src = {require("https://www.picturepaste.ca/images/2020/04/11/ISO-Code.png")}/>
+<img src = {require("./images/ISO Code.png")}/>
 
 ---
 
@@ -146,13 +132,13 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   template calls contain `rgb()` as the preset color template for the bullet points.
 ```
 
-<img src = {require("https://www.picturepaste.ca/images/2020/04/11/China-Colors-Before.png")}/>
+<img src = {require("./images/China Colors Before.png")}/>
 
 ```notes
 * What we can do is replace `rgb()` with `red()` for `backgroundColor:` (background color for the bullet points) and `yellow()` for `borderColor:` (border color for the bullet points) like so.
 ```
 
-<img src = {require("https://www.picturepaste.ca/images/2020/04/11/image86a1cc3b643ebbb4.png")}/>
+<img src = {require("./images/image.png")}/>
 
 ```notes
 * After editing that part of the code, as we run it through the console via the send button, we notice many things that are different
@@ -160,7 +146,7 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   the initial data point, you'll see that the data points are red with a yellow boarder like intended!
 ```
 
-<img src = {require("https://www.picturepaste.ca/images/2020/04/11/image-1.png")}/>
+<img src = {require("./images/image (1).png")}/>
 
 ```notes
 * Another thing you're thinking about as to why is the background for the mathematical model in a dark-grey tone? The answer to that
@@ -169,4 +155,4 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
   run it, you can't change the color for the mathematical model.
 ```
 
-<img src = {require("https://www.picturepaste.ca/images/2020/04/11/image-2.png")}/>
+<img src = {require("./images/image (2).png")}/>
