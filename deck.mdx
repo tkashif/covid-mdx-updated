@@ -132,3 +132,40 @@ Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downl
 ```
 
 <img src = "https://www.picturepaste.ca/images/2020/04/11/ISO-Code.png"/>
+
+---
+
+# Slide 10
+
+## Make the Datapoints have the same colors of their Country's Flag
+
+```notes
+* Now that you have seen ways to work with Postman to customize the visualization of our mathematical model, you can now give it a try
+  by making the datapoints that represents the level of COVID-19 cases per date have the same colors as the country's flag.
+* Let's do China for instance. So if we go under the test tab of Postman, we can see that the `backgroundColor:` and `borderColor:`
+  template calls contain `rgb()` as the preset color template for the bullet points.
+```
+
+<img src = "https://www.picturepaste.ca/images/2020/04/11/China-Colors-Before.png"/>
+
+```notes
+* What we can do is replace `rgb()` with `red()` for `backgroundColor:` (background color for the bullet points) and `yellow()` for `borderColor:` (border color for the bullet points) like so.
+```
+
+<img src = "https://files.slack.com/files-pri/TJ2FB5CE9-F011Z44CMUZ/image.png"/>
+
+```notes
+* After editing that part of the code, as we run it through the console via the send button, we notice many things that are different
+  about the graph. You're probably wondering where are the colors for the data points, but if you run your cursor through them towards
+  the initial data point, you'll see that the data points are red with a yellow boarder like intended!
+```
+
+<img src = "https://files.slack.com/files-pri/TJ2FB5CE9-F011NSY6PSP/image.png"/>
+
+```notes
+* Another thing you're thinking about as to why is the background for the mathematical model in a dark-grey tone? The answer to that
+  would be when you right click the graph to see the command "Inspect visualization", this page will pop up and if you look at the
+  `color:` section of the JavaScript code, you can see that it's preset to Black. That would mean that no matter how many times you
+  run it, you can't change the color for the mathematical model.
+  
+<img src = "https://files.slack.com/files-pri/TJ2FB5CE9-F011N2JJM18/image.png"/>
