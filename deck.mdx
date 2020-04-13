@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 import Layout from './components/Layout'
 import Grid from './components/Grid'
 import FlexItem from './components/FlexItem'
 import FlexContainer from './components/FlexContainer'
+import { Notes } from 'mdx-deck'
 
 <Layout bg='#ffff66'>
   <h1 style={{'color':'black'}}>Welcome to the Postman COVID-19 Visualization Workshop!</h1>
@@ -16,6 +16,12 @@ import FlexContainer from './components/FlexContainer'
   </FlexContainer>
 </Layout>
 
+<Notes>
+<p>welcome everyone</p>
+<p>introduce the workshop</p>
+<p>what is postman?</p>
+</Notes>
+
 ---
 
 <Layout bg='gray'>
@@ -24,11 +30,19 @@ import FlexContainer from './components/FlexContainer'
   Go to <a href='https://www.postman.com/downloads/'>https://www.postman.com/downloads/</a>
 </Layout>
 
+<Notes>
+<p>download postman</p>
+</Notes>
+
 ---
 
 <Layout bg='tomato'>
   <img src={require('./images/pm-screen.png')}  />
 </Layout>
+
+<Notes>
+<p>give overview of the postman layout</p>
+</Notes>
 
 ---
 
@@ -54,12 +68,22 @@ import FlexContainer from './components/FlexContainer'
   </FlexContainer>
 </Layout>
 
+<Notes>
+<p>walk through steps to download the tutorial</p>
+</Notes>
+
 ---
 
 <Layout bg='tomato'>
   <h1 style={{'height':'0'}}>Add the Visualizer</h1>
   <img src={require("./images/visualizer.png")}/>
 </Layout>
+
+<Notes>
+<p>what is pm.visualizer?</p>
+<p>what is template?</p>
+<p>what is pm.response.json()?</p>
+</Notes>
 
 ---
 
@@ -68,12 +92,22 @@ import FlexContainer from './components/FlexContainer'
   <img src={require("./images/template.png")} style={{'width':'60%'}} />
 </Layout>
 
+<Notes>
+<p>what is going on with this template?</p>
+<p>javascript handlebars, responsive, don't hard code</p>
+</Notes>
+
 ---
 
 <Layout bg='tomato'>
   <h1 style={{'height':'0'}}>View API Request Results</h1>
   <img src={require("./images/visualize-1.png")} style={{'width':'60%'}} />
 </Layout>
+
+<Notes>
+<p>guide students to "visualize" tab at bottom of app</p>
+<p>discuss output</p>
+</Notes>
 
 ---
 
