@@ -127,7 +127,7 @@ import { Notes } from 'mdx-deck'
    `<canvas id="myChart"></canvas>`.
   * Now that we have our canvas, we can now use the Chart.js library through calling this JavaScript command above the HTML one
     to initialize Chart.js library, `<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>`.
-  * After that, we can write the JavaScript code written below between the two `<script>` parameters to form the body that passes the
+  * After that, we can write the JavaScript code written below between the two `<script></script>` parameters to form the body that passes the
     dates and data values of our dataset.
 </Notes>
 
@@ -148,8 +148,6 @@ import { Notes } from 'mdx-deck'
 
 ---
 
-# Slide 7
-
 ## Show Time Series for another country
 
 <Notes>
@@ -164,7 +162,7 @@ import { Notes } from 'mdx-deck'
   and voila! You have created the Time Series model for China.
 </Notes>
 
-<img src ={require("./images/China.png")}/>
+<img src ={require("./images/China.png")}/> 
 
 ---
 
@@ -183,11 +181,11 @@ import { Notes } from 'mdx-deck'
   this would specify the total count for every country.
   * Your API key on the GET search bar will look like this, `https://covidapi.info/api/v1/global/count`, and once you hit the send and
   the visualize buttons, just like that, you created another time series model for COVID-19 cases for the entire world.
-</Notes>
+</Notes> 
 
-<img src = {require("./images/Global Graph.png")}/>
+<!-- <img src = {require("./images/Global Graph.png")}/> -->
   
----
+--- 
 
 # Slide 9
 
@@ -206,8 +204,7 @@ import { Notes } from 'mdx-deck'
 <Notes>
   * Now you can click the send button to run the code for it and click visualize and you'll notice two things when you run this time 
   series: the graph looks exactly the same and the API key has a different variable after `/country/` 
-  `https://covidapi.info/api/v1/country/{{ISO}}`. That is because the only thing we have redefined was China's variable name
-  but everything else remains the same.
+
 </Notes>
   
 <img src = {require("./images/OSI.png")}/>
@@ -215,8 +212,8 @@ import { Notes } from 'mdx-deck'
 <Notes>
   * Now you're probably wondering how is the graph reading through the data appropriately with the new variable name? To further
   explain, when you go to the tests tab on Postman, you should scroll through the very bottom of the code and you should look at
-  the `pm.visualizer.set()` function call. Notice how you have the title call being defined with 
-  ``COVID timeseries data for ${pm.variables.get("ISO")}``. The pm.variables.get() call collects all of the data from the given 
+  the  function call. Notice how you have the title call being defined with 
+  ``COVID timeseries data for ``. The pm.variables.get() call collects all of the data from the given 
   varaible name "ISO", which explains how we're able to store the data itself in the first place.
 </Notes>
 
