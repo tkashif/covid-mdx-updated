@@ -35,7 +35,7 @@ import { Notes } from 'mdx-deck'
   <p> Now that we have our canvas, we can now use the Chart.js library through calling this JavaScript command above the HTML one
     to initialize Chart.js library, `<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>`.
   </p>
-  <p> After that, we can write the JavaScript code written below between the two `<script>` parameters to form the body that passes the
+  <p> After that, we can write the JavaScript code written below between the two `script` parameters to form the body that passes the
     dates and data values of our dataset.
   </p>
   <p> Now that we have completed the steps, we can run the code through the send button and after we click the visualize button, we
@@ -102,7 +102,7 @@ import { Notes } from 'mdx-deck'
   </p>
 </Notes>
 
-<img src = {require("./images/Global Graph.png")}/>
+<!-- <img src = {require("./images/Global Graph.png")}/> -->
   
 ---
 
@@ -120,15 +120,12 @@ import { Notes } from 'mdx-deck'
   data from the previous variable (`CHN`). The function call will look like this, `pm.variables.set("ISO", "CHN");`.
   </p>
   <p> Now you can click the send button to run the code for it and click visualize and you'll notice two things when you run this time 
-  series: the graph looks exactly the same and the API key has a different variable after `/country/` 
-  `https://covidapi.info/api/v1/country/{{ISO}}`. That is because the only thing we have redefined was China's variable name
+  series: the graph looks exactly the same and the API key has a different variable after `/country/`. That is because the only thing we have redefined was China's variable name
   but everything else remains the same.
   </p>
   <p> Now you're probably wondering how is the graph reading through the data appropriately with the new variable name? To further
   explain, when you go to the tests tab on Postman, you should scroll through the very bottom of the code and you should look at
-  the `pm.visualizer.set()` function call. Notice how you have the title call being defined with 
-  ``COVID timeseries data for ${pm.variables.get("ISO")}``. The pm.variables.get() call collects all of the data from the given 
-  varaible name "ISO", which explains how we're able to store the data itself in the first place.
+  the pm.visualizer.set() function call. Notice how you have the title call being defined with COVID timeseries data for pm.variables.get("ISO")}. The pm.variables.get() call collects all of the data from the given variable name "ISO", which explains how we're able to store the data itself in the first place.
   </p>
 </Notes>
 
